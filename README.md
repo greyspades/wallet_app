@@ -14,3 +14,5 @@ To install this project, follow these steps:
     ```flutter pub get```
 4. run the app in development mode:
     ```flutter run```
+
+> the production apk can be found in ```build\app\outputs\flutter-apk\app-release.apk```
