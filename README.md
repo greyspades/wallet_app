@@ -1,6 +1,4 @@
-# My Awesome Project
-
-This is a description of my awesome project. It does amazing things and solves big problems.
+# Wallet aoo
 
 ---
 
@@ -9,3 +7,10 @@ This is a description of my awesome project. It does amazing things and solves b
 To install this project, follow these steps:
 
 1. Clone the repository:
+   ```git clone https://github.com/greyspades/wallet_app.git```
+2. Enter into the directory:
+   ```cd wallet_app```
+3. install dependencies:
+    ```flutter pub get```
+4. run the app in development mode:
+    ```flutter run```
