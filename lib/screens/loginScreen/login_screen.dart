@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:wallet_app/screens/registerScreen/register_screen.dart';
 import 'package:wallet_app/shared/widgets/inputs.dart';
 import 'package:wallet_app/shared/widgets/toast.dart';
-import 'package:wallet_app/services/auth.dart';
+import 'package:wallet_app/services/auth_service.dart';
 import 'package:wallet_app/screens/homeScreen/home_screen.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -106,7 +106,6 @@ class _LoginScreenState extends State<LoginScreen> {
               context, MaterialPageRoute(builder: (context) => HomeScreen()));
         }
       }).catchError((err) {
-        print(err);
         hideToast();
         showErrorState();
         Timer.periodic(const Duration(seconds: 3), (Timer t) {

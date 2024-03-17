@@ -21,7 +21,6 @@ Future<Auth?> Login(String email, String password) async {
       Uri.parse('https://crypto-wallet-server.mock.beeceptor.com/api/v1/login');
   var body = jsonEncode({'email': email, 'password': password});
   final result = await http.post(url, body: body);
-  print(result.body);
   if (result.statusCode == 200) {
     final resultData = jsonDecode(result.body);
     return Auth.fromJson(resultData);

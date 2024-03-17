@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:wallet_app/shared/Models/step.dart' as SplashStep;
 import 'package:wallet_app/screens/splashScreen/widgets/stepper_pill.dart';
 
 class Stepper extends StatefulWidget {
-  SplashStep.Step step;
-  Stepper({super.key, required this.step});
+  final SplashStep.Step step;
+  const Stepper({super.key, required this.step});
   @override
   State<Stepper> createState() => _StepperState();
 }
